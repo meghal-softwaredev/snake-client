@@ -8,18 +8,6 @@ const connect = function () {
     console.log('Successfully connected to game server');
   });
   conn.write('Name: MAP');
-  setTimeout(() => {
-    conn.write('Move: up');
-  }, 1000);
-  setTimeout(() => {
-    conn.write('Move: left');
-  },2000);
-  setTimeout(() => {
-    conn.write('Move: down');
-  },3000);
-  setTimeout(() => {
-    conn.write('Move: right');
-  },4000);
   // interpret incoming data as text
   conn.setEncoding("utf8");
 
